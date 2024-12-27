@@ -242,6 +242,8 @@
 .floppy {
   inline-size: 21px;
   block-size: 21px;
+  position: relative;
+  z-index: 1;
 }
 
 .button:hover .floppy {
