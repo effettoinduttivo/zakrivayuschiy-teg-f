@@ -10,12 +10,20 @@
     --regular-main-font: 400;
     --bold-main-font: 700;
     --main-color: #000;
-    --content-width: clamp(375px, 50vw, 700px);
-    --header-logo-margin: 18.3%;
+    --content-width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
+    --header-padding: clamp(7.5rem, 7.324rem + 0.751vw, 8rem);
     --header-logo-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
     --header-title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
     --shadow-color: #fff;
-    --btn-text-hover-clr: #fff;
+    --btn-text-clr: #fff;
     --contour-clr: #000;
     --main-body-clr: #ff0000;
+}
+
+@media (width <= 375px) {
+    :root {
+      --content-width: 100vw;
+      --header-logo-size: clamp(0rem, 0rem + 13.0667vw, 3.0625rem);
+      --header-title-size: clamp(0rem, 0rem + 3.7333vw, 0.875rem);
+    }
 }
