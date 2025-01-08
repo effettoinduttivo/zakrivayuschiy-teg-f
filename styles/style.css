@@ -246,15 +246,15 @@
   mix-blend-mode: difference;
 }
 
-.popup {
+.modal-window[open] {
+  display: grid;
+}
+
+.modal-window {
   max-inline-size: 357px;
   padding-inline: 30px;
   padding-block: 30px;
   border: 2px solid var(--main-color, #000);
-}
-
-.popup[open] {
-  display: grid;
   grid-template-columns: 1fr 6fr;
   row-gap: 30px;
   column-gap: 20px;
@@ -267,7 +267,7 @@
   block-size: 39px;
 }
 
-.popup__text {
+.modal-window__text {
   font-family: var(--accent-font, sans-serif);
   font-size: 14px;
   line-height: 21px;
