@@ -246,11 +246,11 @@
   mix-blend-mode: difference;
 }
 
-.modal-window[open] {
+.popup[open] {
   display: grid;
 }
 
-.modal-window {
+.popup {
   max-inline-size: 357px;
   padding-inline: 30px;
   padding-block: 30px;
@@ -267,7 +267,7 @@
   block-size: 39px;
 }
 
-.modal-window__text {
+.popup__text {
   font-family: var(--accent-font, sans-serif);
   font-size: 14px;
   line-height: 21px;
